@@ -2,10 +2,9 @@
   <div class="image">
     <div class="ui dimmer">
       <div class="content">
+      <a class="summary" href="{{ .Permalink }}"></a>
         <div class="center">
-          <a href="{{ .Permalink }}">
-            <h2 class="ui header" style="color: white;">{{ .Title }}</h2>
-          </a>
+          <h2 class="ui header" style="color: white;">{{ .Title }}</h2>
           <p style="padding: 5px;">{{ .Summary | plainify | htmlUnescape }}</p>
           <p>@ {{ if isset .Params "author" }}{{ .Params.author }}{{ else }}{{ .Site.Params.author }}{{ end }}</p>
           <div class="ui top right attached black label">{{ .ReadingTime }} min read</div>

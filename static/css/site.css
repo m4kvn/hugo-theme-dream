@@ -173,3 +173,11 @@ h1.ui.header {
 .post-content {
   font-family: "游ゴシック体", YuGothic, "YuGothic M", sans-serif;
 }
+
+a.summary {
+  display: inline-block;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
